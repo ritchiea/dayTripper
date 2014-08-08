@@ -15,7 +15,6 @@
 		463373D6197AF89900367577 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 463373D5197AF89900367577 /* AppDelegate.m */; };
 		463373D9197AF89900367577 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 463373D7197AF89900367577 /* Main.storyboard */; };
 		463373DC197AF89900367577 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 463373DB197AF89900367577 /* FirstViewController.m */; };
-		463373DF197AF89900367577 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 463373DE197AF89900367577 /* SecondViewController.m */; };
 		463373E1197AF89900367577 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 463373E0197AF89900367577 /* Images.xcassets */; };
 		463373E8197AF89900367577 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463373E7197AF89900367577 /* XCTest.framework */; };
 		463373E9197AF89900367577 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463373C5197AF89900367577 /* Foundation.framework */; };
@@ -48,8 +47,6 @@
 		463373D8197AF89900367577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		463373DA197AF89900367577 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		463373DB197AF89900367577 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		463373DD197AF89900367577 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		463373DE197AF89900367577 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		463373E0197AF89900367577 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		463373E6197AF89900367577 /* Day TripperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Day TripperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		463373E7197AF89900367577 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -120,8 +117,6 @@
 				463373D7197AF89900367577 /* Main.storyboard */,
 				463373DA197AF89900367577 /* FirstViewController.h */,
 				463373DB197AF89900367577 /* FirstViewController.m */,
-				463373DD197AF89900367577 /* SecondViewController.h */,
-				463373DE197AF89900367577 /* SecondViewController.m */,
 				463373E0197AF89900367577 /* Images.xcassets */,
 				463373CC197AF89900367577 /* Supporting Files */,
 			);
@@ -204,6 +199,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Andrew Ritchie";
 				TargetAttributes = {
+					463373C1197AF89900367577 = {
+						DevelopmentTeam = CE9R32MSA6;
+					};
 					463373E5197AF89900367577 = {
 						TestTargetID = 463373C1197AF89900367577;
 					};
@@ -254,7 +252,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				463373DF197AF89900367577 /* SecondViewController.m in Sources */,
 				463373D6197AF89900367577 /* AppDelegate.m in Sources */,
 				463373DC197AF89900367577 /* FirstViewController.m in Sources */,
 				463373D2197AF89900367577 /* main.m in Sources */,
@@ -382,10 +379,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Day Tripper/Day Tripper-Prefix.pch";
 				INFOPLIST_FILE = "Day Tripper/Day Tripper-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -395,10 +395,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Day Tripper/Day Tripper-Prefix.pch";
 				INFOPLIST_FILE = "Day Tripper/Day Tripper-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -462,6 +465,7 @@
 				463373F9197AF89900367577 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		463373FA197AF89900367577 /* Build configuration list for PBXNativeTarget "Day TripperTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +474,7 @@
 				463373FC197AF89900367577 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
