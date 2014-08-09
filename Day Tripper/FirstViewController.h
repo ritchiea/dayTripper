@@ -13,7 +13,6 @@
     CLLocationManager *locationManager;
 }
 
-// - (id)getDataFromServer;
 - (void)startStandardUpdates;
 
 @end
