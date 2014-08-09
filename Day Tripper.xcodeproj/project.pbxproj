@@ -21,6 +21,7 @@
 		463373EA197AF89900367577 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463373C9197AF89900367577 /* UIKit.framework */; };
 		463373F2197AF89900367577 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 463373F0197AF89900367577 /* InfoPlist.strings */; };
 		463373F4197AF89900367577 /* Day_TripperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 463373F3197AF89900367577 /* Day_TripperTests.m */; };
+		46A46C761996971B004B0EB3 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A46C751996971B004B0EB3 /* PhotoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		463373EF197AF89900367577 /* Day TripperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Day TripperTests-Info.plist"; sourceTree = "<group>"; };
 		463373F1197AF89900367577 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		463373F3197AF89900367577 /* Day_TripperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Day_TripperTests.m; sourceTree = "<group>"; };
+		46A46C741996971A004B0EB3 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		46A46C751996971B004B0EB3 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				463373D7197AF89900367577 /* Main.storyboard */,
 				463373DA197AF89900367577 /* FirstViewController.h */,
 				463373DB197AF89900367577 /* FirstViewController.m */,
+				46A46C741996971A004B0EB3 /* PhotoViewController.h */,
+				46A46C751996971B004B0EB3 /* PhotoViewController.m */,
 				463373E0197AF89900367577 /* Images.xcassets */,
 				463373CC197AF89900367577 /* Supporting Files */,
 			);
@@ -253,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				463373D6197AF89900367577 /* AppDelegate.m in Sources */,
+				46A46C761996971B004B0EB3 /* PhotoViewController.m in Sources */,
 				463373DC197AF89900367577 /* FirstViewController.m in Sources */,
 				463373D2197AF89900367577 /* main.m in Sources */,
 			);

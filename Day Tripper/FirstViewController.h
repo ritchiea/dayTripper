@@ -13,6 +13,7 @@
     CLLocationManager *locationManager;
 }
 
-- (void)startStandardUpdates;
+- (void)startLocationUpdates;
+- (IBAction)onLookAroundTouch:(id)sender;
 
 @end
